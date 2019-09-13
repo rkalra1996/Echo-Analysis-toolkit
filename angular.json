@@ -132,5 +132,10 @@
       }
     }
   },
-  "defaultProject": "echo-analysis"
+  "defaultProject": "echo-analysis",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }
