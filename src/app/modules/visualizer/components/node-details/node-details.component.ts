@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { GraphDetailsService } from '../../services/graph-details-shared-service/graph-details.service';
 
 @Component({
@@ -6,7 +6,7 @@ import { GraphDetailsService } from '../../services/graph-details-shared-service
   templateUrl: './node-details.component.html',
   styleUrls: ['./node-details.component.scss']
 })
-export class NodeDetailsComponent implements OnInit {
+export class NodeDetailsComponent implements OnInit{
 
   public node;
 
@@ -15,6 +15,11 @@ export class NodeDetailsComponent implements OnInit {
   ngOnInit() {
     this.sharedSrvc.activeNode.subscribe(node => {
       this.node = node;
+      if (typeof this.node === 'string') {
+        window.setTimeout(() => {
+          this.node = null;
+        },2000);
+      }
     });
   }
 

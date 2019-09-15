@@ -74,7 +74,8 @@ export class GraphDetailsService {
         {source: "Ghost Ship", target: "Gestolene Herzen", value: 1},
         {source: "Gestolene Herzen", target: "Band of Brothers", value: 1},
         {source: "Band of Brothers", target: "Sean Connery", value: 1},
-        {source: "Sean Connery", target: "Mit aller Macht", value: 1}
+        {source: "Sean Connery", target: "Mit aller Macht", value: 1},
+        {source: "Mit aller Macht", target: "Gestolene Herzen", value: 1}
       ]
       };
   }
