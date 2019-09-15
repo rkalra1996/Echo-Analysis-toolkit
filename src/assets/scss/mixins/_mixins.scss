@@ -1,0 +1,19 @@
+@mixin general-box-with-shadow {
+    border-radius: 10px;
+    -webkit-box-shadow: 3px 2px 27px -10px rgba(0,0,0,0.46);
+    -moz-box-shadow: 3px 2px 27px -10px rgba(0,0,0,0.46);
+    box-shadow: 3px 2px 27px -10px rgba(0,0,0,0.46);
+}
+
+@mixin general-button-box($buttonColor, $defaultColor) {
+    font-size: 1.6rem;
+    background: $buttonColor;
+    min-width: 100px;
+    min-height: 50px;
+    padding: 10px;
+    color: $defaultColor;
+    border-radius: 5px;
+    -webkit-box-shadow: 3px 2px 27px -10px rgba(0,0,0,0.46);
+    -moz-box-shadow: 3px 2px 27px -10px rgba(0,0,0,0.46);
+    box-shadow: 3px 2px 27px -10px rgba(0,0,0,0.46);
+}

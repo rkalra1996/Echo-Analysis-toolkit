@@ -1,0 +1,26 @@
+.links line {
+    stroke: #999;
+    stroke-opacity: 0.6;
+  }
+  
+  .nodes circle {
+    stroke: #fff;
+    stroke-width: 1.5px;
+  }
+  
+  .blink {
+    transition: .3s;
+  }
+
+.blink2 {
+  animation: blink .5s linear infinite;
+}
+
+  @keyframes blink{
+    0%{opacity: 0;}
+    50%{opacity: .5;}
+    100%{opacity: 1;}
+    }
+
+
+

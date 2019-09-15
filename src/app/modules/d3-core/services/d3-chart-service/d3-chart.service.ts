@@ -12,4 +12,8 @@ export class D3ChartService {
     this.D3 = this.d3coreSrvc.D3Object;
    }
 
+   get D3Object() {
+     return this.D3;
+   }
+
 }

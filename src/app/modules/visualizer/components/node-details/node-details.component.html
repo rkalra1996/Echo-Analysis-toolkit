@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="nodeDetails effect8">
+        <div class="title">Details</div>
+        <ng-container *ngIf="node">
+            <div class="body" *ngIf="node !== 'Finished' else final">
+                Name : {{node?.id}} <br>
+                Time : {{node?.time}} <br>
+                Value : {{node?.value}}
+              </div>
+          <ng-template #final>
+            <div class="body">
+                <p class="centerText">This is final</p>
+            </div>
+          </ng-template>
+        </ng-container>
+</div>
+</div>
