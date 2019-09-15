@@ -22,6 +22,8 @@ export class GraphDetailsService {
       name: "Sean Connery",
       group: 1,
       value: 0,
+      duration: '10 seconds',
+      tone: 'positive',
       time: 0
       },
       {
@@ -29,6 +31,8 @@ export class GraphDetailsService {
       name: "Roger Moore",
       group: 2,
       value: 1,
+      duration: '20 seconds',
+      tone: 'positive',
       time: 1
       },
       {
@@ -36,6 +40,8 @@ export class GraphDetailsService {
       name: "Pierce Brosnan",
       group: 2,
       value: 2,
+      duration: '15 seconds',
+      tone: 'moderate',
       time: 2
       },
       {
@@ -43,6 +49,8 @@ export class GraphDetailsService {
       name: "Ghost Ship",
       group: 2,
       value: 3,
+      duration: '20 seconds',
+      tone: 'negative',
       time: 3
       },
       {
@@ -50,6 +58,8 @@ export class GraphDetailsService {
       name: "Gestolene Herzen",
       group: 2,
       value: 4,
+      duration: '20 seconds',
+      tone: 'positive',
       time: 4
       },
       {
@@ -57,6 +67,8 @@ export class GraphDetailsService {
       name: "Band of Brothers",
       group: 2,
       value: 5,
+      duration: '20 seconds',
+      tone: 'negative',
       time: 5
       },
       {
@@ -64,6 +76,8 @@ export class GraphDetailsService {
       name: "Mit aller Macht",
       group: 2,
       value: 6,
+      duration: '30 seconds',
+      tone: 'positive',
       time: 6
       },
       ],

@@ -13,16 +13,17 @@
         </div>
         <div class="row">
           <p class="label">Organiser</p>
-          <p class="labelValue">Sam Tarly</p>
+          <p class="labelValue">Sean Connery</p>
         </div>
         <div class="row">
           <p class="label">Duration</p>
-          <p class="labelValue">28mins</p>
+          <p class="labelValue">50 seconds</p>
         </div>
       </div>
       <div class="buttonContainer" (click)="collapse = !collapse">
         <a class="clicker">
-            <i class="fas fa-chevron-up"></i>
+            <i *ngIf="collapse" class="fas fa-chevron-up"></i>
+            <i *ngIf="!collapse" class="fas fa-chevron-down"></i>
         </a>
       </div>
     </ng-container>

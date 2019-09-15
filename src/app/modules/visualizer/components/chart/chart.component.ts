@@ -33,7 +33,8 @@ export class ChartComponent implements OnInit {
     floor: 0,
     step: 5,
     ceil: 50,
-    readOnly: true
+    readOnly: true,
+    showTicks: true
   };
 
   constructor(private D3ChartSrvc: D3ChartService, private sharedSrvc: GraphDetailsService) { }

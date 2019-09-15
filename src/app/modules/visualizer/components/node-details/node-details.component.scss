@@ -34,3 +34,23 @@
     width: 100%;
     text-align: center;
 }
+
+.row {
+    display: flex;
+    .label, .labelValue {
+        flex: 1;
+    }
+}
+
+p {
+    margin : 0;
+}
+
+
+.redText {
+    color: red;
+}
+
+.greenText {
+    color: green;
+}

@@ -1,15 +1,26 @@
 <div class="container" *ngIf="node">
   <div class="nodeDetails">
-        <div class="title">Details</div>
-        <ng-container *ngIf="node">
-            <div class="body" *ngIf="node !== 'Finished' else final">
-                Name : {{node?.id}} <br>
-              </div>
-          <ng-template #final>
-            <div class="body">
-                <p class="centerText">Sequence completed !</p>
-            </div>
-          </ng-template>
-        </ng-container>
-</div>
+    <div class="title">Details</div>
+    <ng-container *ngIf="node">
+      <div class="body" *ngIf="node !== 'done' else final">
+        <div class="row">
+          <p class="label">Name</p>
+          <p class="labelValue">{{node?.name}}</p>
+        </div>
+        <div class="row">
+          <p class="label">Tone</p>
+          <p class="labelValue" [ngClass]="{'redText': node?.tone == 'negative', 'greenText': node?.tone == 'positive'}">{{node?.tone}}</p>
+        </div>
+        <div class="row">
+          <p class="label">Duration</p>
+          <p class="labelValue">{{node?.duration}}</p>
+        </div>
+      </div>
+      <ng-template #final>
+        <div class="body">
+          <p class="centerText">Sequence completed !</p>
+        </div>
+      </ng-template>
+    </ng-container>
+  </div>
 </div>

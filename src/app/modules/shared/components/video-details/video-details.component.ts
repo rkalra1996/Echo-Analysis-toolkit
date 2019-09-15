@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VideoDetailsComponent implements OnInit {
 
-  public collapse = false;
+  public collapse = true;
 
   constructor() { }
 
