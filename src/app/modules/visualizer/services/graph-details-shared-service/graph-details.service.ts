@@ -17,106 +17,170 @@ export class GraphDetailsService {
   get graphData() {
     return {
       nodes: [
-      {
-      id: "Sean Connery",
-      name: "Sean Connery",
-      group: 1,
-      value: 0,
-      duration: '10 seconds',
-      tone: 'positive',
-      time: 0
-      },
-      {
-      id: "Roger Moore",
-      name: "Roger Moore",
-      group: 2,
-      value: 1,
-      duration: '20 seconds',
-      tone: 'positive',
-      time: 1
-      },
-      {
-      id: "Pierce Brosnan",
-      name: "Pierce Brosnan",
-      group: 2,
-      value: 2,
-      duration: '15 seconds',
-      tone: 'moderate',
-      time: 2
-      },
-      {
-      id: "Ghost Ship",
-      name: "Ghost Ship",
-      group: 2,
-      value: 3,
-      duration: '20 seconds',
-      tone: 'negative',
-      time: 3
-      },
-      {
-      id: "Gestolene Herzen",
-      name: "Gestolene Herzen",
-      group: 2,
-      value: 4,
-      duration: '20 seconds',
-      tone: 'positive',
-      time: 4
-      },
-      {
-      id: "Band of Brothers",
-      name: "Band of Brothers",
-      group: 2,
-      value: 5,
-      duration: '20 seconds',
-      tone: 'negative',
-      time: 5
-      },
-      {
-      id: "Mit aller Macht",
-      name: "Mit aller Macht",
-      group: 2,
-      value: 6,
-      duration: '30 seconds',
-      tone: 'positive',
-      time: 6
-      },
+        {
+          id: "Dr. Anand Vishwas",
+          name: "Dr. Anand Vishwas",
+          group: 1,
+          value: 0,
+          gender: 'Male',
+          videoStatus: 'On',
+          duration: '10 mins',
+          location: 'Bangalore',
+          tone: 'positive',
+          time: 0
+        },
+        {
+          id: "Dr. Binny Roger",
+          name: "Dr. Binny Roger",
+          group: 2,
+          value: 1,
+          gender: 'Male',
+          videoStatus: 'On',
+          duration: '20 mins',
+          location: 'Chandigarh',
+          tone: 'positive',
+          time: 1
+        },
+        {
+          id: "Dr. Akshay Bhatia",
+          name: "Dr. Akshay Bhatia",
+          group: 2,
+          value: 2,
+          gender: 'Male',
+          videoStatus: 'On',
+          duration: '15 mins',
+          location: 'Jharkand',
+          tone: 'neutral',
+          time: 2
+        },
+        {
+          id: "Dr. Sanjay Arora",
+          name: "Dr. Sanjay Arora",
+          group: 2,
+          value: 3,
+          gender: 'Male',
+          videoStatus: 'On',
+          duration: '20 mins',
+          location: 'Shimla',
+          tone: 'negative',
+          time: 3
+        },
+        {
+          id: "Dr. Vijay Kumar",
+          name: "Dr. Vijay Kumar",
+          group: 2,
+          value: 4,
+          gender: 'Male',
+          videoStatus: 'On',
+          duration: '20 mins',
+          location: 'New Delhi',
+          tone: 'positive',
+          time: 4
+        },
+        {
+          id: "Dr. Sumita Patil",
+          name: "Dr. Sumita Patil",
+          group: 2,
+          value: 5,
+          gender: 'Female',
+          videoStatus: 'On',
+          duration: '20 mins',
+          location: 'Bangalore',
+          tone: 'negative',
+          time: 5
+        },
+        {
+          id: "Dr. Riya Bansal",
+          name: "Dr. Riya Bansal",
+          group: 2,
+          value: 6,
+          gender: 'Female',
+          videoStatus: 'On',
+          duration: '30 mins',
+          location: 'Kerala',
+          tone: 'positive',
+          time: 6
+        },
+        {
+          id: "Dr. Sonam Ahuja",
+          name: "Dr. Sonam Ahuja",
+          group: 2,
+          value: 6,
+          gender: 'Female',
+          videoStatus: 'On',
+          duration: '30 mins',
+          location: 'UT of J&K',
+          tone: 'positive',
+          time: 6
+        },
+        {
+          id: "Dr. Deepak Jhangra",
+          name: "Dr. Deepak Jhangra",
+          group: 2,
+          value: 6,
+          gender: 'Male',
+          videoStatus: 'On',
+          duration: '10 mins',
+          location: 'Goa',
+          tone: 'negative',
+          time: 6
+        },
+        {
+          id: "Dr. Abhishek Chaudhary",
+          name: "Dr. Abhishek Chaudhary",
+          group: 2,
+          value: 6,
+          gender: 'Male',
+          videoStatus: 'On',
+          duration: '15 mins',
+          location: 'Bangalore',
+          tone: 'neutral',
+          time: 6
+        }
       ],
       links: [
-        {source: "Sean Connery", target: "Roger Moore", value: 1},
-        {source: "Roger Moore", target: "Pierce Brosnan", value: 1},
-        {source: "Pierce Brosnan", target: "Ghost Ship", value: 1},
-        {source: "Ghost Ship", target: "Gestolene Herzen", value: 1},
-        {source: "Gestolene Herzen", target: "Band of Brothers", value: 1},
-        {source: "Band of Brothers", target: "Sean Connery", value: 1},
-        {source: "Sean Connery", target: "Mit aller Macht", value: 1},
-        {source: "Mit aller Macht", target: "Gestolene Herzen", value: 1}
+        { source: "Dr. Anand Vishwas", target: "Dr. Binny Roger", value: 1 },
+        { source: "Dr. Binny Roger", target: "Dr. Akshay Bhatia", value: 1 },
+        { source: "Dr. Akshay Bhatia", target: "Dr. Sanjay Arora", value: 1 },
+        { source: "Dr. Sanjay Arora", target: "Dr. Vijay Kumar", value: 1 },
+        { source: "Dr. Vijay Kumar", target: "Dr. Sumita Patil", value: 1 },
+        { source: "Dr. Sumita Patil", target: "Dr. Anand Vishwas", value: 1 },
+        { source: "Dr. Anand Vishwas", target: "Dr. Riya Bansal", value: 1 },
+        { source: "Dr. Riya Bansal", target: "Dr. Vijay Kumar", value: 1 },
+        { source: "Dr. Vijay Kumar", target: "Dr. Sonam Ahuja", value: 1 },
+        { source: "Dr. Sonam Ahuja", target: "Dr. Deepak Jhangra", value: 1 },
+        { source: "Dr. Deepak Jhangra", target: "Dr. Abhishek Chaudhary", value: 1 },
+        { source: "Dr. Abhishek Chaudhary", target: "Dr. Vijay Kumar", value: 1 },
+        { source: "Dr. Vijay Kumar", target: "Dr. Riya Bansal", value: 1 },
+        { source: "Dr. Riya Bansal", target: "Dr. Deepak Jhangra", value: 1 },
+        { source: "Dr. Deepak Jhangra", target: "Dr. Anand Vishwas", value: 1 },
       ]
-      };
+    };
   }
 
-  nodeDetailsByLink(link: {source: string, target: string}) {
+  nodeDetailsByLink(link: { source: string, target: string }) {
     let sourceNode;
     let targetNode;
-      let indexS = this.graphData.nodes.findIndex(node => {
-        return node.id === link.source;
-      });
-      let indexT = this.graphData.nodes.findIndex(node => {
-        return node.id === link.target;
-      });
-      if (indexS === undefined) {
-        console.log('source node index not found', link.source);
-        sourceNode = null;
-      } else {
-        // get the node
-        sourceNode = this.graphData.nodes[indexS]
-      }
-      if (indexT === undefined) {
-        console.log('source node index not found', link.target);
-        targetNode = null;
-      } else {
-        targetNode = this.graphData.nodes[indexT]
-      }
-      return {source: sourceNode, target: targetNode};
+    let indexS = this.graphData.nodes.findIndex(node => {
+      return node.id === link.source;
+    });
+    let indexT = this.graphData.nodes.findIndex(node => {
+      return node.id === link.target;
+    });
+    if (indexS === undefined) {
+      console.log('source node index not found', link.source);
+      sourceNode = null;
+    } else {
+      // get the node
+      sourceNode = this.graphData.nodes[indexS]
+    }
+    if (indexT === undefined) {
+      console.log('source node index not found', link.target);
+      targetNode = null;
+    } else {
+      targetNode = this.graphData.nodes[indexT]
+    }
+    return { source: sourceNode, target: targetNode };
   }
 
   getNodeIndex(nodeName) {

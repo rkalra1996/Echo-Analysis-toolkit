@@ -41,6 +41,8 @@ export class ChartComponent implements OnInit {
 
   ngOnInit() {
     this.data = this.sharedSrvc.graphData;
+    // set the ceil
+    this.options.ceil = this.data.links.length * 5;
     this.svg = d3.select('#canvas').append('svg')
     .attr('width', "100%").attr('height', "55vh")   
     .attr("preserveAspectRatio", "xMinYMin meet")
@@ -61,7 +63,7 @@ export class ChartComponent implements OnInit {
  private d3SimpleGraph(svg) : void{
 
  this.simulation = d3.forceSimulation(this.nodes)
-     .force("link", d3.forceLink(this.links).id(d => d['id']).distance(200))
+     .force("link", d3.forceLink(this.links).id(d => d['id']).distance(170))
      .force("charge", d3.forceManyBody().strength(-240))
      .force("collide", d3.forceCollide().radius(function(d) { return d.r + 10; }).iterations(1))
      .force("center", d3.forceCenter(400, 200));
@@ -149,7 +151,7 @@ export class ChartComponent implements OnInit {
 
  blink() {
    this.blinkingQueue = [];
-   this.value = 0;
+   this.value = -5;
    this.sharedSrvc.sendActiveNode(null);
   this.animate2();
  }

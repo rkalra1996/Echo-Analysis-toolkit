@@ -1,31 +1,31 @@
 <div class="container">
   <div class="nodeDetails">
-    <div class="title">Video Details</div>
+    <div class="title"><strong>Video Details</strong></div>
     <ng-container>
-      <div class="body" *ngIf="collapse">
+      <div class="body">
         <div class="row">
           <p class="label">Name</p>
-          <p class="labelValue">VideoXYZ</p>
+          <p class="labelValue">Discussion on TB</p>
         </div>
         <div class="row">
-          <p class="label">Created</p>
+          <p class="label">Held On</p>
           <p class="labelValue">12 Sept 2019</p>
         </div>
         <div class="row">
           <p class="label">Organiser</p>
-          <p class="labelValue">Sean Connery</p>
+          <p class="labelValue">Dr. Anand Vishwas</p>
         </div>
         <div class="row">
           <p class="label">Duration</p>
-          <p class="labelValue">50 seconds</p>
+          <p class="labelValue">2 Hours</p>
         </div>
       </div>
-      <div class="buttonContainer" (click)="collapse = !collapse">
+      <!-- <div class="buttonContainer" (click)="collapse = !collapse">
         <a class="clicker">
             <i *ngIf="collapse" class="fas fa-chevron-up"></i>
             <i *ngIf="!collapse" class="fas fa-chevron-down"></i>
         </a>
-      </div>
+      </div> -->
     </ng-container>
   </div>
 </div>
