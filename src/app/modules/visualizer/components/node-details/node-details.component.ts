@@ -16,9 +16,9 @@ export class NodeDetailsComponent implements OnInit{
     this.sharedSrvc.activeNode.subscribe(node => {
       this.node = node;
       if (typeof this.node === 'string') {
-        window.setTimeout(() => {
-          this.node = null;
-        },2000);
+        /* window.setTimeout(() => {
+          this.node = null; 
+        },2000); */
       }
     });
   }
