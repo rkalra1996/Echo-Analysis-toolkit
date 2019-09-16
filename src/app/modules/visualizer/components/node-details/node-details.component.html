@@ -1,5 +1,5 @@
 <div class="container" *ngIf="node">
-  <div class="nodeDetails">
+  <div class="nodeDetails" [ngClass]="{'organiser-border': node.group == 1, 'attendee-border': node.group !== 1, 'sessionComplete': node === 'done'}">
     <div class="title"><strong>Participant Details</strong></div>
     <ng-container *ngIf="node">
       <div class="body" *ngIf="node !== 'done' else final">

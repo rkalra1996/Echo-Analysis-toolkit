@@ -8,9 +8,10 @@ import { ChartComponent } from './components/chart/chart.component';
 import { GraphComponent } from './components/graph/graph.component';
 import {SharedModule} from './../shared/shared.module';
 import { NodeDetailsComponent } from './components/node-details/node-details.component';
+import { LegendsComponent } from './components/legends/legends.component';
 
 @NgModule({
-  declarations: [MainComponent, ChartComponent, GraphComponent, NodeDetailsComponent],
+  declarations: [MainComponent, ChartComponent, GraphComponent, NodeDetailsComponent, LegendsComponent],
   imports: [
     CommonModule,
     Ng5SliderModule,

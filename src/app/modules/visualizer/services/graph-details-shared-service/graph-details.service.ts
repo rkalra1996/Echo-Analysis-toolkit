@@ -26,7 +26,7 @@ export class GraphDetailsService {
           videoStatus: 'On',
           duration: '10 mins',
           location: 'Bangalore',
-          tone: 'positive',
+          tone: 'Positive',
           time: 0
         },
         {
@@ -38,7 +38,7 @@ export class GraphDetailsService {
           videoStatus: 'Off',
           duration: '20 mins',
           location: 'Chandigarh',
-          tone: 'positive',
+          tone: 'Positive',
           time: 1
         },
         {
@@ -50,7 +50,7 @@ export class GraphDetailsService {
           videoStatus: 'On',
           duration: '15 mins',
           location: 'Jharkand',
-          tone: 'neutral',
+          tone: 'Neutral',
           time: 2
         },
         {
@@ -62,7 +62,7 @@ export class GraphDetailsService {
           videoStatus: 'On',
           duration: '20 mins',
           location: 'Shimla',
-          tone: 'negative',
+          tone: 'Negative',
           time: 3
         },
         {
@@ -74,7 +74,7 @@ export class GraphDetailsService {
           videoStatus: 'On',
           duration: '20 mins',
           location: 'New Delhi',
-          tone: 'positive',
+          tone: 'Positive',
           time: 4
         },
         {
@@ -86,7 +86,7 @@ export class GraphDetailsService {
           videoStatus: 'Off',
           duration: '20 mins',
           location: 'Bangalore',
-          tone: 'negative',
+          tone: 'Negative',
           time: 5
         },
         {
@@ -98,7 +98,7 @@ export class GraphDetailsService {
           videoStatus: 'Off',
           duration: '30 mins',
           location: 'Kerala',
-          tone: 'positive',
+          tone: 'Positive',
           time: 6
         },
         {
@@ -110,7 +110,7 @@ export class GraphDetailsService {
           videoStatus: 'On',
           duration: '30 mins',
           location: 'UT of J&K',
-          tone: 'positive',
+          tone: 'Positive',
           time: 6
         },
         {
@@ -122,7 +122,7 @@ export class GraphDetailsService {
           videoStatus: 'On',
           duration: '10 mins',
           location: 'Goa',
-          tone: 'negative',
+          tone: 'Negative',
           time: 6
         },
         {
@@ -134,7 +134,7 @@ export class GraphDetailsService {
           videoStatus: 'Off',
           duration: '15 mins',
           location: 'Bangalore',
-          tone: 'neutral',
+          tone: 'Neutral',
           time: 6
         }
       ],
