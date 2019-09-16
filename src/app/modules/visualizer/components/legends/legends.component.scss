@@ -15,10 +15,14 @@
     font-size: 1.3rem;
     margin-top: 20px;
     // background: #c7ffc7;
-    @include general-box-with-shadow;
+    // @include general-box-with-shadow;
 }
 span.label{
-    margin: 0 5px;
+    margin: -3px 5px;
+}
+
+.labelValue {
+    line-height: 1.5;
 }
 span.label.org {
     background: #1f77b4;
@@ -33,4 +37,5 @@ span.label.att {
     width: 20px;
     border-radius: 50%;
     height: 20px;
+    margin-left: -2px;
 }
